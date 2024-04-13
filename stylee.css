@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bolder;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #153677, #4e085f);
+    padding: 10px;
+
+}
+
+.Todo {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0px -1px 3px #ddd;
+}
+
+.Todo h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', 'sans-serif';
+
+}
+
+.Todo h2 i {
+    width: 30px;
+    color: #002765;
+    margin: 0 20px;
+
+}
+
+.Todo .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+
+
+}
+
+.Todo .row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 15px;
+    font-size: 14px;
+
+
+}
+
+.Todo .row button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #ff5945;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 40px;
+}
+
+ul li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: #151515;
+    box-shadow: 0px -1px 3px #434242;
+
+
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+
+
+ul li.checked::before {
+  
+    background-image: url(./pngtree-simple-style-correct-symbol-icon-material-image_2291415.jpg);
+}
+
+ul li i {
+    font-size: 18px;
+
+}
+
+ul li i:hover {
+    color: #ff5945;
+
+}
+
+@media (max-width: 450px) {
+    .Todo {
+   
+        border-radius: 10px;
+   
+    }
+    .Todo .row input {
+
+        padding: 10px;
+    
+    
+    }
+    .Todo .row button {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        background-color: #ff5945;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 40px;
+    }
+    
+    
+    
+
+}
